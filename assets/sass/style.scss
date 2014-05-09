@@ -1,0 +1,511 @@
+// @import "fontface.scss";
+@import "reset.scss";
+@import "vars.scss";
+@import "modules/prism-light";
+@import "modules/button";
+$red-warmer: adjust-color($red,$hue: 25%,$saturation: 35%,$lightness: 10%);
+$grey: grey;
+html {
+  // force a vertical scrollbar
+  // padding-bottom: 1px;
+  overflow-y: scroll;
+  font-size: 16px;
+}
+html,
+body {
+  height: 100%;
+}
+body,
+cite a {
+  font-family: "PT Sans Narrow", pt_sans_narrowregular, AvenirNextCondensed-Regular, AvenirNext-Regular, Avenir-Light, "Lucida Grande", Corbel, "Trebuchet Ms", sans-serif;
+}
+body {
+  font-size: 100%;
+  line-height: 1.375;
+  background-color: #fff;
+  color: #111;
+  text-align:center;
+  position: relative;
+}
+.header-wrap {
+  overflow: hidden;
+  @media (min-width:600px){
+    background-color: adjust-color($blue,$lightness: 30%);
+  }
+}
+.header {
+  padding-bottom: 2em;
+  max-width: 34em;
+  @media (min-width:960px){
+    float: left;
+  }
+}
+h1 {
+  position: relative;
+  z-index: 2;
+  line-height: 1;
+  color: $violet;
+  text-shadow: -1px -1px 1px #fff,2px 2px 0 $base05;
+
+  @media (min-width:400px){
+    font-size: 4em;
+  }
+  @media (min-width:600px){
+    margin-bottom: -.75em;
+  }
+}
+.main {
+  margin-bottom: 4em;
+}
+svg,
+img {
+  max-width: 100%;
+}
+cite {
+  font-style: normal;
+}
+cite a {
+  font-style: italic;
+  color: $base06;
+}
+cite a:hover {
+  outline: 1px dotted hsla(0,0%,0%,.5);
+}
+h1,
+h2,
+.borderimage.svg .header p::after,
+.header code,
+.btn,
+em,
+blockquote cite b {
+  font-family: "PT Sans Narrow", pt_sans_narrowbold, AvenirNextCondensed-DemiBold, "Lucida Grande", Corbel, "Trebuchet Ms", sans-serif;
+  word-wrap: break-word;
+  /* font-weight: normal; */
+  font-style: normal;
+}
+.header p {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+
+  @media (min-width:500px){
+    font-size: 1.25em;
+  }
+  @media (min-width:600px){
+    line-height: 2;
+    margin-top:-.25em;
+    border: 48px solid #fff;
+    border-radius: 50%;
+    box-shadow: 6px 20px 12px transparentize($blue, .65);
+  }
+}
+.header span {
+  display: inline-block;
+}
+.header code {
+  @media (max-width:599px){
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+.borderimage.svg .header p::before {
+  @media (min-width:600px){
+    content: "";
+    position: absolute;
+    top:0;right:0;bottom:0;left:0;
+    border-radius: 50%;
+    height: 170px;
+    margin-top: -54px;
+    width: 75%;
+    margin-left: 12.5%;
+    background-color: #fff;
+    z-index: -2;
+  }
+}
+.borderimage.svg .header p::after {
+  @media (min-width:600px){
+    position: absolute;
+    right:0;bottom:0;left:0;
+    margin-bottom: -2.85em;
+    z-index: 3;
+    font-size: 1.125em;
+    color: $red;
+  }
+}
+.borderimage.svg .dv-01 .header p::after {
+  @media (min-width:600px){
+    content: "ZigZag";
+  }
+}
+.borderimage.svg .dv-02 .header p::after {
+  @media (min-width:600px){
+    content: "Wave";
+  }
+}
+.borderimage.svg .dv-03 .header p::after {
+  @media (min-width:600px){
+    content: "Trapeze";
+  }
+}
+.borderimage.svg .dv-04 .header p::after {
+  @media (min-width:600px){
+    content: "Asterisk";
+  }
+}
+.borderimage.svg .dv-05 .header p::after {
+  @media (min-width:600px){
+    content: "Diagonal Block";
+  }
+}
+.borderimage.svg .dv-06 .header p::after {
+  @media (min-width:600px){
+    content: "Straight Block";
+  }
+}
+
+.borderimage.svg .dv-07 .header p::after {
+  @media (min-width:600px){
+    content: "Meander";
+  }
+}
+.footer--page {
+  position: fixed;
+  bottom:0;left:0;right:0;
+  background-color: hsla(0,0%,0%,.5);
+  color: #fff;
+  color: hsla(0,0%,100%,.75);
+}
+.footer--page small {
+  font-size: 1em;
+  display: block;
+  text-shadow: 1px 1px 0 hsla(0,0%,0%,.75);
+}
+.footer--page a {
+  display: inline-block;
+  padding: 1em 0;
+  color: #fff;
+  color: hsla(0,0%,100%,.75);
+  text-decoration: none;
+}
+.footer--page a:focus,
+.footer--page a:hover,
+.footer--page a:active {
+  text-decoration: underline;
+}
+
+pre {
+  margin: 0;
+  font: .75em/1.25 Consolas, Menlo, Monaco, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+  white-space: pre-wrap;
+  color: #000;
+}
+
+a {
+  color: adjust-color($blue,$lightness: -30%);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  font-size: 2em;
+}
+h2,
+blockquote {
+  text-align: left;
+}
+
+.section--about {
+  text-align: left;
+  background-color: adjust-color($orange,$lightness: 25%);
+}
+.section--about  p {
+  padding: .5em 0;
+
+  @media (min-width:400px){
+    font-size: 1.5em;
+    max-width: 26em;
+  }
+  @media (min-width:960px){
+    font-size: 3em;
+    margin: 0 2.5rem;
+  }
+}
+
+.section--about h2 {
+  @media (min-width:600px){
+    font-size: 4em;
+    margin: 0 2.5rem;
+  }
+}
+.section--about .divider {
+  @media (min-width:600px){
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  @media (min-width:700px){
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  @media (min-width:800px){
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+.blockquote blockquote {
+  max-width: 29em;
+}
+.section--about .blockquote {
+  padding-bottom: 4em;
+}
+.blockquote {
+  background-color: hsla(0,0%,0%,.5) !important;
+  color: #fff;
+  color: hsla(0,0%,100%,.9);
+  text-shadow: 1px 1px 0 hsla(0,0%,0%,.75);
+  letter-spacing: 1px;
+
+  @media (min-width:600px){
+    font-size: 1.5em;
+  }
+}
+.disclaimer {
+  background-color: hsla(0,0%,100%,.75) !important;
+}
+.disclaimer small {
+  font-size: 1.125em;
+  display: block;
+  max-width: 32em;
+}
+
+.main p code,
+.main small code {
+  font-size: .875em;
+  border-radius: 3px;
+  background-color: hsla(0,0%,100%,.25);
+  margin: 0 3px;
+  padding: 2px .5em 0;
+  border: 1px solid hsla(0,0%,0%,.25);
+  display: inline-block;
+}
+blockquote cite {
+  margin-top: 1em;
+  text-align: right;
+  display: block;
+  width: 100%;
+}
+blockquote cite a {
+  float: right;
+  clear: left;
+  width: 100%;
+  padding-right: .2em;
+}
+
+.fig {
+  margin: 2em auto 0;
+  background: hsla(0,0%,100%,.25) url(../svg/zigzag_96x96_border-image.svg) 0 0 no-repeat;
+  width: 96px;
+  height: 96px;
+}
+.dv-02 .fig {
+  background-image: url(../svg/wave_96x96_border-image.svg);
+  width: 96px;
+  height: 96px;
+}
+.dv-03 .fig {
+  background-image: url(../svg/trapeze_96x96_border-image.svg);
+  width: 96px;
+  height: 96px;
+}
+.dv-04 .fig {
+  background-image: url(../svg/asterisk_96x96_border-image.svg);
+  width: 96px;
+  height: 96px;
+}
+.dv-05 .fig {
+  background-image: url(../svg/diagonal-block_48x48_border-image.svg);
+  width: 48px;
+  height: 48px;
+}
+.dv-06 .fig {
+  background-image: url(../svg/blocks_48x48_border-image.svg);
+  width: 48px;
+  height: 48px;
+}
+.dv-07 .fig {
+  background-image: url(../svg/meander_152x152_border-image.svg);
+  width: 152px;
+  height: 152px;
+}
+.no-svg .fig {
+  background: none;
+}
+// section dividers
+.divider {
+  padding: 2rem 1rem;
+} 
+.dv-05 .divider,
+.dv-06 .divider {
+  padding: 3rem 2rem;
+}
+.dv-07 .divider {
+  padding: 1rem 0;
+}
+.borderimage.svg .divider {
+  border: 32px solid transparent;
+  border-image:url(../svg/zigzag_96x96_border-image.svg) 32 round round;
+}
+
+// .flexbox .section--code {
+.flexbox .section {
+  @media (min-width: 1376px){
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+  }
+}
+// .no-flexbox .section--code .divider {
+.no-flexbox .section .divider {
+  min-height: 500px;
+}
+// .flexbox .section--code .divider {
+.flexbox .section .divider {
+  @media (min-width: 1376px){
+    flex-grow: 1;
+    min-height: initial;
+    float: none;
+  }
+}
+
+.section--code__visual {
+  background-color:  $red;
+}
+// toggles
+.borderimage.svg .dv-02 .divider {
+  border: 32px solid transparent;
+  border-image:url(../svg/wave_96x96_border-image.svg) 32 round round;
+}
+.borderimage.svg .dv-03 .divider {
+  border: 32px solid transparent;
+  border-image:url(../svg/trapeze_96x96_border-image.svg) 32 round round;
+}
+.borderimage.svg .dv-04 .divider {
+  border: 32px solid transparent;
+  border-image: url(../svg/asterisk_96x96_border-image.svg) 32 round round;
+}
+.borderimage.svg .dv-05 .divider {
+  border: 16px solid transparent;
+  border-image:url(../svg/diagonal-block_48x48_border-image.svg) 16 round round;
+}
+.borderimage.svg .dv-06 .divider {
+  border: 16px solid transparent;
+  border-image: url(../svg/blocks_48x48_border-image.svg) 16 round round;
+}
+.borderimage.svg .dv-07 .divider {
+  border: 50px solid transparent;
+  border-image:url(../svg/meander_152x152_border-image.svg) 50 round round;
+}
+
+// .is-not-active ...
+[class*="shape--"],
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  outline: 0;
+}
+
+// .is-active ...
+.dv-01 .shape--01,
+.dv-02 .shape--02,
+.dv-03 .shape--03,
+.dv-04 .shape--04,
+.dv-05 .shape--05,
+.dv-06 .shape--06,
+.dv-07 .shape--07 {
+  clip: initial;
+  height: auto;
+  margin: 1.5em auto .5em;
+  padding: 1em;
+  overflow: auto;
+  position: static;
+  width: auto;
+  outline: inherit;
+}
+
+// .is-active ...
+.dv-01 .section--code__example .shape--01,
+.dv-02 .section--code__example .shape--02,
+.dv-03 .section--code__example .shape--03,
+.dv-04 .section--code__example .shape--04,
+.dv-05 .section--code__example .shape--05,
+.dv-06 .section--code__example .shape--06,
+.dv-07 .section--code__example .shape--07 {
+  font-size: 14px;
+  line-height: 1.375;
+  direction: ltr;
+  text-align: left;
+  word-spacing: normal;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+  background: $base07;
+  color: $base02;
+  max-width: 50em;
+  border: 1px solid adjust-color($base05,$lightness: 10%);
+}
+
+.section--code {
+  background-color: $base06;
+}
+section {
+  overflow: auto;
+}
+.no-flexbox [class*="width-"] {
+  float: left;
+}
+// .no-flexbox .width-1v2 {
+.width-1v2 {
+  @media (min-width: 1376px){
+    width: 50%;
+  }
+}
+
+// no borderimage, no svg = no fun.
+.no-svg body:before,
+.no-borderimage body:after {
+  position: absolute;
+  background: #333;
+  top:0;left:0;right:0;
+  padding: 1em 1em 1.5em;
+  background-color: $red-warmer;
+  color: #fff;
+  font-size: 2em;
+  z-index: 3;
+}
+.no-borderimage body:after {
+  content: "this browser doesn’t support border-images, so this demo will not make much sense is this environment";
+}
+.no-svg body:before {
+  content: "this browser doesn’t support SVG images, so this demo will not make much sense is this environment";
+}
+.no-svg.no-borderimage body:before {
+  content: "and also no SVG images: this demo wants to be seen in a modern browser!";
+  padding-top: 8em;
+  padding-bottom: 100%;
+}

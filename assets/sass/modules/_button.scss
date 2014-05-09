@@ -1,0 +1,56 @@
+button {
+  &:invalid {
+    box-shadow: none;
+  }
+  &:focus {
+    box-shadow: 0 0 5px 0 adjust-color($blue,$lightness: 5%,$saturation: 5%);
+    z-index: 1;
+  }
+}
+
+button {
+  -webkit-appearance: none;
+  border-radius: 4px;
+  background-clip: padding-box;
+  border: 1px solid;
+  border-color: adjust-color($base05,$lightness: 5%) $base05 $base04;
+  cursor: pointer;
+  color: #333;
+  display: inline-block;
+  outline: 0;
+  overflow: visible;
+  margin: 2.5em 0 0;
+  padding: 1em 2em;
+  text-shadow: white 0 1px 1px;
+  text-decoration: none;
+  vertical-align: top;
+  width: auto;
+  font-size: 18px;
+
+  background-color: $base07;
+
+  background-image: linear-gradient(#fff,$base07 1px,$base06);
+
+
+  &:hover {
+  background-image: linear-gradient(#fff,$base07 1px,adjust-color($base06,$lightness: -5%));
+    text-decoration: none;
+  }
+
+  &:active {
+  background-image: linear-gradient($base06,$base07);
+    box-shadow: inset 0 1px 2px 0 rgba(0,0,0,0.25);
+    border-color: #999 #bbb #ddd;
+  border-color: $base04 $base05 adjust-color($base05,$lightness: 5%);
+  }
+
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+
+  @media (min-width:960px){
+      float: right;
+      margin: 7em 2.5% 0 0;
+  }
+}

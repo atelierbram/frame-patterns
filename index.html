@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Repeating patterns as borders with CSS3 border-image</title>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+<link href="assets/css/style.css" rel="stylesheet">
+<link rel="author" href="https://plus.google.com/+BramdeHaan/posts">
+<!-- <script>if ( 'querySelector' in document && 'addEventListener' in window && Array.prototype.forEach ) {
+document.documentElement.className += 'js';
+}</script> -->
+<!-- <script src="js/modernizr.custom.58687.js"></script>  -->
+<script src="assets/js/modernizr.custom.38621.js"></script>
+<meta name="viewport" content="initial-scale=1.0, width=device-width">
+</head>
+<body class="dv-01">
+<div id="headerWrap" class="divider header-wrap">
+<header id="header" class="header">
+  <h1>Frame Patterns</h1>
+  <p><span>repeating patterns as borders with </span> CSS3 <code>border-image</code></p>
+</header>
+</div>
+
+<main class="main" role="main">
+
+<section class="section section--code">
+  <div class="width-1v2 divider section--code__example">
+
+    <pre class="language-css shape--01"><code class="language-css">
+.divider {
+  border: 32px solid transparent;
+  border-image:url(../svg/zigzag_96x96_border-image.svg) 32 round round;
+  background-color: #f33;
+}</code></pre>
+
+    <pre class="language-css shape--02"><code class="language-css">
+.divider {
+  border: 32px solid transparent;
+  border-image:url(../svg/wave_96x96_border-image.svg) 32 round round;
+  background-color: #3c93c9;
+}</code></pre>
+
+    <pre class="language-css shape--03"><code class="language-css">
+.divider {
+  border: 32px solid transparent;
+  border-image:url(../svg/trapeze_96x96_border-image.svg) 32 round round;
+  background-color: #c9743c;
+}</code></pre>
+     <pre class="language-css shape--04"><code class="language-css">
+.divider {
+  border: 32px solid transparent;
+  border-image:url(../svg/asterisk_96x96_border-image.svg) 32 round round;
+  background-color: grey;
+}</code></pre>
+    <pre class="language-css shape--05"><code class="language-css">
+.divider {
+  border: 16px solid transparent;
+  border-image:url(../svg/diagonal-block_48x48_border-image.svg) 16 round round;
+  background-color: grey;
+}</code></pre>
+    <pre class="language-css shape--06"><code class="language-css">
+.divider {
+  border: 16px solid transparent;
+  background-image: url(../svg/blocks_48x48_border-image.svg) 16 round round;
+  background-color: grey;
+}</code></pre>
+
+     <pre class="language-css shape--07"><code class="language-css">
+.divider {
+  border: 50px solid transparent;
+  border-image:url(../svg/meander_152x152_border-image.svg) 50 round round;
+  background-color: #5d5db1;
+}</code></pre>
+  </div>
+
+  <div class="width-1v2 divider section--code__visual">
+
+    <div class="fig"></div>
+    <div class="figcaption">
+      <pre class="shape--01">Zigzag shape
+img size:
+96px square</pre>
+      <pre class="shape--02">Wave shape
+img size:
+96px square
+      </pre>
+      <pre class="shape--03">Trapeze shape
+img size:
+69px square
+      </pre>
+       <pre class="shape--04">Asterisk shape
+img size:
+69px square
+      </pre>
+      <pre class="shape--05">Diagonal Block shape
+img size:
+48px square
+      </pre>
+      <pre class="shape--06">Block shape
+img size:
+48px square
+      </pre>
+
+       <pre class="shape--07">Meander shape
+img size:
+152px square
+      </pre>
+    </div>
+
+  </div>
+</section>
+
+<section id="about" class="section section--about">
+  <!-- <div class="divider"> -->
+    <!-- <h2>Objectives</h2> -->
+    <!-- <p> Main goal of this demo and study is to create border&#45;images that can work as dividers, and <em>can</em> be used “stand alone” on a single box, but don’t <em>have</em> to. That’s why the sides (left, right, top and bottom) sometimes have different positions, because it should be complementary to itself, like puzzle pieces are.  </p> -->
+   <!-- <p>Secondary goal; when making a collection of border&#45;images that are small in file&#45;size and are made out of geometrical shapes, those shapes could possibly be easier to be iterated upon and reused.</p> -->
+    <div class="disclaimer divider width-1v2"><small>This demo will only work with browsers that support <code>border-image</code>, and only reliable so if the <code>round</code> value is correctly implemented.</small>
+    </div>
+     <div class="blockquote divider width-1v2"><blockquote>“For a certain kind of temperament, there is a certain kind of satisfaction in doing something that cannot be perfect, but can still be done to the best of your ability.” <cite><b>Matthew Carter</b> talking about <b>designing within constrains</b> in: <a href="http://t.co/tTijhPoeWz">My life in typefaces</a></cite></blockquote></div>
+</section>
+
+</main>
+
+<footer class="footer footer--page"><small><a href="#!">Github</a> &middot; <a href="#!">Codepen</a></small></footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.0.min.js"><\/script>')</script>
+<!-- <script src="assets/js/button.js"></script> -->
+<!-- <script src="assets/js/toggle.js"></script> -->
+<script>$(function(){$("#headerWrap").append($("<button>toggle border-images</button>").attr("id","btnToggle").addClass("btn"))});$(function(){$("#btnToggle").click(function(){$("body").each(function(){var classes=["dv-01","dv-02","dv-03","dv-04","dv-05","dv-06","dv-07"];this.className=classes[($.inArray(this.className,classes)+1)%classes.length]})})});</script>
+<script src="assets/js/prism-comp-scss.min.js"></script>
+</body>
+</html>
+
