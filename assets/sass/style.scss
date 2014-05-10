@@ -474,7 +474,7 @@ blockquote cite a {
   background-color: $base06;
 }
 section {
-  overflow: auto;
+  overflow: hidden;
 }
 .no-flexbox [class*="width-"] {
   float: left;

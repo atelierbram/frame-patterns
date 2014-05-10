@@ -761,7 +761,7 @@ blockquote cite a {
 }
 
 section {
-  overflow: auto;
+  overflow: hidden;
 }
 
 .no-flexbox [class*="width-"] {
