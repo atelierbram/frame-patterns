@@ -1,14 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="96px" height="96px" viewBox="0 0 96 96">
-<style type="text/css"><![CDATA[ path{fill:#fff;}]]></style>
-<g>
-<path class="st1" d="M96,0L96,0c0,0-11.9,4-16,4c-4.1,0-11.9-4-16-4S52.1,4,48,4S36.1,0,32,0S20.1,4,16,4C11.9,4,4.1,0,0,0l0,0v-4
-h96V0z"/>
-<path class="st1" d="M96,92c-4.1,0-11.9,4-16,4s-11.9-4-16-4c-4.1,0-11.9,4-16,4s-11.9-4-16-4s-11.9,4-16,4S4.1,92,0,92l0,0v8h80
-h16V92L96,92z"/>
-<path class="st1" d="M0,0L0,0c0,0,4,11.9,4,16c0,4.1-4,11.9-4,16s4,11.9,4,16S0,59.9,0,64s4,11.9,4,16S0,91.9,0,96l0,0h-4V0H0z"/>
-<path class="st1" d="M92,0c0,4.1,4,11.9,4,16s-4,11.9-4,16c0,4.1,4,11.9,4,16s-4,11.9-4,16s4,11.9,4,16s-4,11.9-4,16l0,0h8V16V0
-H92L92,0z"/>
-</g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96px" height="96px" viewBox="0 0 96 96"><style type="text/css"><![CDATA[path{fill:#fff;}]]></style><g><path class="st1" d="M96,0L96,0c0,0-11.9,4-16,4c-4.1,0-11.9-4-16-4S52.1,4,48,4S36.1,0,32,0S20.1,4,16,4C11.9,4,4.1,0,0,0l0,0v-4 h96V0z"/><path class="st1" d="M96,92c-4.1,0-11.9,4-16,4s-11.9-4-16-4c-4.1,0-11.9,4-16,4s-11.9-4-16-4s-11.9,4-16,4S4.1,92,0,92l0,0v8h80 h16V92L96,92z"/><path class="st1" d="M0,0L0,0c0,0,4,11.9,4,16c0,4.1-4,11.9-4,16s4,11.9,4,16S0,59.9,0,64s4,11.9,4,16S0,91.9,0,96l0,0h-4V0H0z"/><path class="st1" d="M92,0c0,4.1,4,11.9,4,16s-4,11.9-4,16c0,4.1,4,11.9,4,16s-4,11.9-4,16s4,11.9,4,16s-4,11.9-4,16l0,0h8V16V0 H92L92,0z"/></g></svg>

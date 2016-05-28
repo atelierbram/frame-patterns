@@ -1,21 +1,2 @@
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="96px" height="96px" viewBox="0 0 96 96">
-<style type="text/css"><![CDATA[polygon{fill:#fff;} ]]></style>
-<g>
-<polygon class="st1" points="14,4 12,0 28,0 26,4"/>
-<polygon class="st1" points="42,4 40,0 56,0 54,4"/>
-<polygon class="st1" points="70,4 68,0 84,0 82,4"/>
-<polygon class="st1" points="0,92 0,96 14,96 12,92"/>
-<polygon class="st1" points="28,92 26,96 42,96 40,92"/>
-<polygon class="st1" points="56,92 54,96 70,96 68,92"/>
-<polygon class="st1" points="84,92 82,96 96,96 96,92"/>
-<polygon class="st1" points="4,82 0,84 0,68 4,70"/>
-<polygon class="st1" points="4,54 0,56 0,40 4,42"/>
-<polygon class="st1" points="4,26 0,28 0,12 4,14"/>
-<polygon class="st1" points="92,96 96,96 96,82 92,84"/>
-<polygon class="st1" points="92,68 96,70 96,54 92,56"/>
-<polygon class="st1" points="92,40 96,42 96,26 92,28"/>
-<polygon class="st1" points="92,12 96,14 96,0 92,0"/>
-</g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96px" height="96px" viewBox="0 0 96 96"><style type="text/css"><![CDATA[polygon{fill:#fff;} ]]></style><g><polygon class="st1" points="14,4 12,0 28,0 26,4"/><polygon class="st1" points="42,4 40,0 56,0 54,4"/><polygon class="st1" points="70,4 68,0 84,0 82,4"/><polygon class="st1" points="0,92 0,96 14,96 12,92"/><polygon class="st1" points="28,92 26,96 42,96 40,92"/><polygon class="st1" points="56,92 54,96 70,96 68,92"/><polygon class="st1" points="84,92 82,96 96,96 96,92"/><polygon class="st1" points="4,82 0,84 0,68 4,70"/><polygon class="st1" points="4,54 0,56 0,40 4,42"/><polygon class="st1" points="4,26 0,28 0,12 4,14"/><polygon class="st1" points="92,96 96,96 96,82 92,84"/><polygon class="st1" points="92,68 96,70 96,54 92,56"/><polygon class="st1" points="92,40 96,42 96,26 92,28"/><polygon class="st1" points="92,12 96,14 96,0 92,0"/></g></svg>
 
