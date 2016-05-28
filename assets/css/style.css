@@ -777,6 +777,13 @@ section {
   }
 }
 
+.disclaimer small {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  letter-spacing: 1px;
+  word-spacing: -1px;
+}
+
 .no-svg body:before,
 .no-borderimage body:after {
   position: absolute;

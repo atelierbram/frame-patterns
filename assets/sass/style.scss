@@ -504,6 +504,12 @@ section {
     width: 50%;
   }
 }
+.disclaimer small {
+  background-color: rgba(black,.5);
+  color: #fff;
+  letter-spacing: 1px;
+  word-spacing: -1px;
+}
 
 // no borderimage, no svg = no fun.
 .no-svg body:before,
