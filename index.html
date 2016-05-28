@@ -65,12 +65,17 @@ document.documentElement.className += 'js';
   border-image: url(../svg/blocks_48x48_border-image.svg) 16 round round;
   background-color: grey;
 }</code></pre>
-
-     <pre class="language-css shape--07"><code class="language-css">
+    <pre class="language-css shape--07"><code class="language-css">
 .divider {
   border: 50px solid transparent;
   border-image:url(../svg/meander_152x152_border-image.svg) 50 round round;
   background-color: #5d5db1;
+}</code></pre>
+    <pre class="language-css shape--08"><code class="language-css">
+.divider {
+  border: 13px solid transparent;
+  border-image:url(../svg/stamp_40x40_border-image.svg) 13.33333 round round;
+  background-color: grey;
 }</code></pre>
   </div>
 
@@ -87,11 +92,11 @@ img size:
       </pre>
       <pre class="shape--03">Trapeze shape
 img size:
-69px square
+96px square
       </pre>
        <pre class="shape--04">Asterisk shape
 img size:
-69px square
+96px square
       </pre>
       <pre class="shape--05">Diagonal Block shape
 img size:
@@ -101,10 +106,13 @@ img size:
 img size:
 48px square
       </pre>
-
        <pre class="shape--07">Meander shape
 img size:
 152px square
+      </pre>
+      <pre class="shape--08">Stamp shape
+img size:
+40x square
       </pre>
     </div>
 
@@ -125,7 +133,7 @@ img size:
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.0.min.js"><\/script>')</script>
 <!-- <script src="assets/js/button.js"></script> -->
 <!-- <script src="assets/js/toggle.js"></script> -->
-<script>$(function(){$("#headerWrap").append($("<button>toggle border-images</button>").attr("id","btnToggle").addClass("btn"))});$(function(){$("#btnToggle").click(function(){$("body").each(function(){var classes=["dv-01","dv-02","dv-03","dv-04","dv-05","dv-06","dv-07"];this.className=classes[($.inArray(this.className,classes)+1)%classes.length]})})});</script>
+<script>$(function(){$("#headerWrap").append($("<button>toggle border-images</button>").attr("id","btnToggle").addClass("btn"))});$(function(){$("#btnToggle").click(function(){$("body").each(function(){var classes=["dv-01","dv-02","dv-03","dv-04","dv-05","dv-06","dv-07","dv-08"];this.className=classes[($.inArray(this.className,classes)+1)%classes.length]})})});</script>
 <script src="assets/js/prism-comp-scss.min.js"></script>
 </body>
 </html>
