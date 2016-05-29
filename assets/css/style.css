@@ -213,11 +213,6 @@ body {
   padding: 1em;
   border-bottom: 1em solid #fff;
 }
-@media (min-width: 600px) {
-  .header-wrap {
-    background-color: #85c5e5;
-  }
-}
 
 .header {
   padding-bottom: 2em;
@@ -545,49 +540,49 @@ blockquote cite a {
 
 .fig {
   margin: 2em auto 0;
-  background: rgba(255, 255, 255, 0.25) url(../svg/zigzag_96x96_border-image.svg) 0 0 no-repeat;
+  background: rgba(255, 255, 255, 0.25) url(//atelierbram.github.io/frame-patterns/assets/svg/zigzag_96x96_border-image.svg) 0 0 no-repeat;
   width: 96px;
   height: 96px;
 }
 
 .dv-02 .fig {
-  background-image: url(../svg/wave_96x96_border-image.svg);
+  background-image: url(//atelierbram.github.io/frame-patterns/assets/svg/wave_96x96_border-image.svg);
   width: 96px;
   height: 96px;
 }
 
 .dv-03 .fig {
-  background-image: url(../svg/trapeze_96x96_border-image.svg);
+  background-image: url(//atelierbram.github.io/frame-patterns/assets/svg/trapeze_96x96_border-image.svg);
   width: 96px;
   height: 96px;
 }
 
 .dv-04 .fig {
-  background-image: url(../svg/asterisk_96x96_border-image.svg);
+  background-image: url(//atelierbram.github.io/frame-patterns/assets/svg/asterisk_96x96_border-image.svg);
   width: 96px;
   height: 96px;
 }
 
 .dv-05 .fig {
-  background-image: url(../svg/diagonal-block_48x48_border-image.svg);
+  background-image: url(//atelierbram.github.io/frame-patterns/assets/svg/diagonal-block_48x48_border-image.svg);
   width: 48px;
   height: 48px;
 }
 
 .dv-06 .fig {
-  background-image: url(../svg/blocks_48x48_border-image.svg);
+  background-image: url(//atelierbram.github.io/frame-patterns/assets/svg/blocks_48x48_border-image.svg);
   width: 48px;
   height: 48px;
 }
 
 .dv-07 .fig {
-  background-image: url(../svg/meander_152x152_border-image.svg);
+  background-image: url(//atelierbram.github.io/frame-patterns/assets/svg/meander_152x152_border-image.svg);
   width: 152px;
   height: 152px;
 }
 
 .dv-08 .fig {
-  background-image: url(../svg/stamp_36x36_border-image.svg);
+  background-image: url(//atelierbram.github.io/frame-patterns/assets/svg/stamp_36x36_border-image.svg);
   width: 36px;
   height: 36px;
 }
@@ -615,8 +610,8 @@ blockquote cite a {
 
 .borderimage.svg .divider {
   border: 32px solid transparent;
-  -o-border-image: url(../svg/zigzag_96x96_border-image.svg) 32 round round;
-     border-image: url(../svg/zigzag_96x96_border-image.svg) 32 round round;
+  -o-border-image: url(//atelierbram.github.io/frame-patterns/assets/svg/zigzag_96x96_border-image.svg) 32 round round;
+     border-image: url(//atelierbram.github.io/frame-patterns/assets/svg/zigzag_96x96_border-image.svg) 32 round round;
 }
 
 .flexbox .section {
@@ -656,44 +651,44 @@ blockquote cite a {
 
 .borderimage.svg .dv-02 .divider {
   border: 32px solid transparent;
-  -o-border-image: url(../svg/wave_96x96_border-image.svg) 32 round round;
-     border-image: url(../svg/wave_96x96_border-image.svg) 32 round round;
+  -o-border-image: url(//atelierbram.github.io/frame-patterns/assets/svg/wave_96x96_border-image.svg) 32 round round;
+     border-image: url(//atelierbram.github.io/frame-patterns/assets/svg/wave_96x96_border-image.svg) 32 round round;
 }
 
 .borderimage.svg .dv-03 .divider {
   border: 32px solid transparent;
-  -o-border-image: url(../svg/trapeze_96x96_border-image.svg) 32 round round;
-     border-image: url(../svg/trapeze_96x96_border-image.svg) 32 round round;
+  -o-border-image: url(//atelierbram.github.io/frame-patterns/assets/svg/trapeze_96x96_border-image.svg) 32 round round;
+     border-image: url(//atelierbram.github.io/frame-patterns/assets/svg/trapeze_96x96_border-image.svg) 32 round round;
 }
 
 .borderimage.svg .dv-04 .divider {
   border: 32px solid transparent;
-  -o-border-image: url(../svg/asterisk_96x96_border-image.svg) 32 round round;
-     border-image: url(../svg/asterisk_96x96_border-image.svg) 32 round round;
+  -o-border-image: url(//atelierbram.github.io/frame-patterns/assets/svg/asterisk_96x96_border-image.svg) 32 round round;
+     border-image: url(//atelierbram.github.io/frame-patterns/assets/svg/asterisk_96x96_border-image.svg) 32 round round;
 }
 
 .borderimage.svg .dv-05 .divider {
   border: 16px solid transparent;
-  -o-border-image: url(../svg/diagonal-block_48x48_border-image.svg) 16 round round;
-     border-image: url(../svg/diagonal-block_48x48_border-image.svg) 16 round round;
+  -o-border-image: url(//atelierbram.github.io/frame-patterns/assets/svg/diagonal-block_48x48_border-image.svg) 16 round round;
+     border-image: url(//atelierbram.github.io/frame-patterns/assets/svg/diagonal-block_48x48_border-image.svg) 16 round round;
 }
 
 .borderimage.svg .dv-06 .divider {
   border: 16px solid transparent;
-  -o-border-image: url(../svg/blocks_48x48_border-image.svg) 16 round round;
-     border-image: url(../svg/blocks_48x48_border-image.svg) 16 round round;
+  -o-border-image: url(//atelierbram.github.io/frame-patterns/assets/svg/blocks_48x48_border-image.svg) 16 round round;
+     border-image: url(//atelierbram.github.io/frame-patterns/assets/svg/blocks_48x48_border-image.svg) 16 round round;
 }
 
 .borderimage.svg .dv-07 .divider {
   border: 50px solid transparent;
-  -o-border-image: url(../svg/meander_152x152_border-image.svg) 50 round round;
-     border-image: url(../svg/meander_152x152_border-image.svg) 50 round round;
+  -o-border-image: url(//atelierbram.github.io/frame-patterns/assets/svg/meander_152x152_border-image.svg) 50 round round;
+     border-image: url(//atelierbram.github.io/frame-patterns/assets/svg/meander_152x152_border-image.svg) 50 round round;
 }
 
 .borderimage.svg .dv-08 .divider {
   border: 12px solid transparent;
-  -o-border-image: url(../svg/stamp_36x36_border-image.svg) 12 round round;
-     border-image: url(../svg/stamp_36x36_border-image.svg) 12 round round;
+  -o-border-image: url(//atelierbram.github.io/frame-patterns/assets/svg/stamp_36x36_border-image.svg) 12 round round;
+     border-image: url(//atelierbram.github.io/frame-patterns/assets/svg/stamp_36x36_border-image.svg) 12 round round;
 }
 
 [class*="shape--"],
