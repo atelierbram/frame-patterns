@@ -291,6 +291,8 @@ blockquote cite b {
   .header p {
     line-height: 2;
     margin-top: -.25em;
+    padding-left: 3em;
+    padding-right: 3em;
     border: 48px solid #fff;
     border-radius: 50%;
     box-shadow: 6px 20px 12px rgba(37, 127, 173, 0.35);
