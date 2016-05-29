@@ -210,6 +210,8 @@ body {
 
 .header-wrap {
   overflow: hidden;
+  padding: 1em;
+  border-bottom: 1em solid #fff;
 }
 @media (min-width: 600px) {
   .header-wrap {
@@ -617,6 +619,9 @@ blockquote cite a {
      border-image: url(../svg/zigzag_96x96_border-image.svg) 32 round round;
 }
 
+.flexbox .section {
+  margin: 0 1em;
+}
 @media (min-width: 1376px) {
   .flexbox .section {
     display: -webkit-box;

@@ -28,12 +28,17 @@ body {
   text-align:center;
   position: relative;
 }
+
 .header-wrap {
   overflow: hidden;
+  padding: 1em;
+  border-bottom: 1em solid #fff;
+
   @media (min-width:600px){
     background-color: adjust-color($blue,$lightness: 30%);
   }
 }
+
 .header {
   padding-bottom: 2em;
   max-width: 34em;
@@ -370,13 +375,15 @@ blockquote cite a {
   border-image:url(../svg/zigzag_96x96_border-image.svg) 32 round round;
 }
 
-// .flexbox .section--code {
 .flexbox .section {
+  margin: 0 1em;
+
   @media (min-width: 1376px){
     display: flex;
     justify-content: center;
     align-items: stretch;
   }
+
 }
 // .no-flexbox .section--code .divider {
 .no-flexbox .section .divider {
