@@ -1,7 +1,7 @@
 Frame Patterns
 ==============
 
-Repeating patterns as borders with CSS3 border-image
+Repeating patterns as border-image
 
 * [Demo on Github](http://atelierbram.github.io/frame-patterns/)
 * [Demo on Codepen](http://codepen.io/atelierbram/pen/vrdKB)
