@@ -592,9 +592,9 @@ blockquote cite a {
 }
 
 .dv-08 .fig {
-  background-image: url(../svg/stamp_40x40_border-image.svg);
-  width: 40px;
-  height: 40px;
+  background-image: url(../svg/stamp_36x36_border-image.svg);
+  width: 36px;
+  height: 36px;
 }
 
 .no-svg .fig {
@@ -693,9 +693,9 @@ blockquote cite a {
 }
 
 .borderimage.svg .dv-08 .divider {
-  border: 13px solid transparent;
-  -o-border-image: url(../svg/stamp_40x40_border-image.svg) 13 round round;
-     border-image: url(../svg/stamp_40x40_border-image.svg) 13 round round;
+  border: 12px solid transparent;
+  -o-border-image: url(../svg/stamp_36x36_border-image.svg) 12 round round;
+     border-image: url(../svg/stamp_36x36_border-image.svg) 12 round round;
 }
 
 [class*="shape--"],
