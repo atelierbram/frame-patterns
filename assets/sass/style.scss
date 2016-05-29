@@ -224,7 +224,7 @@ blockquote {
 
 .section--about {
   text-align: left;
-  background-color: adjust-color($orange,$lightness: 25%);
+  // background-color: adjust-color($orange,$lightness: 25%);
 }
 .section--about  p {
   padding: .5em 0;
@@ -264,9 +264,7 @@ blockquote {
 }
 .section--about .blockquote {
   padding-bottom: 4em;
-}
-.blockquote {
-  background-color: hsla(0,0%,0%,.5) !important;
+  background-color: $violet;
   color: #fff;
   color: hsla(0,0%,100%,.9);
   text-shadow: 1px 1px 0 hsla(0,0%,0%,.75);
@@ -277,9 +275,10 @@ blockquote {
   }
 }
 .disclaimer {
-  background-color: hsla(0,0%,100%,.75) !important;
+  // background-color: hsla(0,0%,100%,.75) !important;
 }
 .disclaimer small {
+  background-color: mix($magenta,$violet,50%) !important;
   font-size: 1.125em;
   display: block;
   max-width: 32em;

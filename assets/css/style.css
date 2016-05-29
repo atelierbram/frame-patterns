@@ -447,7 +447,6 @@ blockquote {
 
 .section--about {
   text-align: left;
-  background-color: #d79c60;
 }
 
 .section--about p {
@@ -498,26 +497,20 @@ blockquote {
 
 .section--about .blockquote {
   padding-bottom: 4em;
-}
-
-.blockquote {
-  background-color: rgba(0, 0, 0, 0.5) !important;
+  background-color: #5d5db1;
   color: #fff;
   color: rgba(255, 255, 255, 0.9);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.75);
   letter-spacing: 1px;
 }
 @media (min-width: 600px) {
-  .blockquote {
+  .section--about .blockquote {
     font-size: 1.5em;
   }
 }
 
-.disclaimer {
-  background-color: rgba(255, 255, 255, 0.75) !important;
-}
-
 .disclaimer small {
+  background-color: #8a45c2 !important;
   font-size: 1.125em;
   display: block;
   max-width: 32em;
